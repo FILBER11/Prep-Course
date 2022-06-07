@@ -123,7 +123,7 @@ function elevarAlCuadrado(num) {
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  return Math.pow(num, 3)
+  return num * num * num;
 }
 
 function elevar(num, exponent) {
@@ -147,7 +147,7 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return Math.random();
+  return Math.random(1, 0);
 }
 
 function esPositivo(numero) {
@@ -155,8 +155,8 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if(numero > 0) return "es positivo";
-  if(numero < 0) return "es negativo";
+  if(numero > 0) return "Es positivo";
+  if(numero < 0) return "Es negativo";
   return false;
 }
 
@@ -179,7 +179,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return "hola" + nombre + "!";
+  return 'Hola ' + nombre + '!';
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
